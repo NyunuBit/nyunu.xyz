@@ -1,9 +1,9 @@
 <div
-	class="bottom-0 w-full flex fixed p-2 justify-between items-center bg-background"
+	class="bottom-0 h-8 w-full flex fixed justify-between items-center bg-background"
 >
 	<br />
 	<br />
-	<p class="text-text/70">
+	<p class="text-text/70 m-0">
 		<span
 			>This Website is <a
 				class="underline hover:text-accent"
