@@ -9,38 +9,50 @@
 	>
 		<NavBarButton path="/">
 			{#snippet children()}
-				<House></House>
-				<a
-					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/">Home</a
-				>
+				<a href="/" class="flex gap-2">
+					<House></House>
+					<p
+						class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
+					>
+						Home
+					</p>
+				</a>
 			{/snippet}
 		</NavBarButton>
 		<NavBarButton path="/projects">
 			{#snippet children()}
-				<Rocket></Rocket>
-				<a
-					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/projects">Projects</a
-				>
+				<a href="/projects" class="flex gap-2">
+					<Rocket></Rocket>
+					<p
+						class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
+					>
+						Projects
+					</p>
+				</a>
 			{/snippet}
 		</NavBarButton>
 		<NavBarButton path="/comms">
 			{#snippet children()}
-				<Store></Store>
-				<a
-					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/comms">Commisions</a
-				>
+				<a href="/comms" class="flex gap-2">
+					<Store></Store>
+					<p
+						class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
+					>
+						Commisions
+					</p>
+				</a>
 			{/snippet}
 		</NavBarButton>
 		<NavBarButton path="/contact">
 			{#snippet children()}
-				<Phone></Phone>
-				<a
-					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/contact">Contact</a
-				>
+				<a href="/contact" class="flex gap-2">
+					<Phone></Phone>
+					<p
+						class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
+					>
+						Contact
+					</p>
+				</a>
 			{/snippet}
 		</NavBarButton>
 	</ul>
