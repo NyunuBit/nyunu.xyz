@@ -3,7 +3,7 @@
 	import { House, Rocket, Store, Phone } from "@lucide/svelte";
 </script>
 
-<div class="h-screen absolute p-3 flex items-center">
+<div class=" absolute p-3 flex items-center">
 	<ul
 		class="overflow-hidden flex flex-col group rounded-default-round duration-250 shadow-xl/30 bg-background"
 	>
