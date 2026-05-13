@@ -6,7 +6,7 @@
 	<p class="text-text/70">
 		<span
 			>This Website is <a
-				class="underline hover:text-text"
+				class="underline hover:text-accent"
 				href="https://github.com/NyunuBit/nyunu.xyz">Open Source</a
 			></span
 		> | By Nyunu
