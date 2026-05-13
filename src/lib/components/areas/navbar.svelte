@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeaderButton from "$lib/components/elements/header_btn.svelte";
+	import NavBarButton from "$lib/components/elements/navbar_btn.svelte";
 	import { House, Rocket, Store, Phone } from "@lucide/svelte";
 </script>
 
@@ -7,7 +7,7 @@
 	<ul
 		class="overflow-hidden flex flex-col group rounded-default-round duration-250 shadow-xl/30 bg-background"
 	>
-		<HeaderButton>
+		<NavBarButton>
 			{#snippet children()}
 				<House></House>
 				<a
@@ -15,8 +15,8 @@
 					href="/">Home</a
 				>
 			{/snippet}
-		</HeaderButton>
-		<HeaderButton>
+		</NavBarButton>
+		<NavBarButton>
 			{#snippet children()}
 				<Rocket></Rocket>
 				<a
@@ -24,8 +24,8 @@
 					href="/">Project</a
 				>
 			{/snippet}
-		</HeaderButton>
-		<HeaderButton>
+		</NavBarButton>
+		<NavBarButton>
 			{#snippet children()}
 				<Store></Store>
 				<a
@@ -33,8 +33,8 @@
 					href="/">Commisions</a
 				>
 			{/snippet}
-		</HeaderButton>
-		<HeaderButton>
+		</NavBarButton>
+		<NavBarButton>
 			{#snippet children()}
 				<Phone></Phone>
 				<a
@@ -42,6 +42,6 @@
 					href="/">Contact</a
 				>
 			{/snippet}
-		</HeaderButton>
+		</NavBarButton>
 	</ul>
 </div>
