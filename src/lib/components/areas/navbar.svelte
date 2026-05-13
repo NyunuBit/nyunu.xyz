@@ -7,7 +7,7 @@
 	<ul
 		class="overflow-hidden flex flex-col group rounded-default-round duration-250 shadow-xl/30 bg-background"
 	>
-		<NavBarButton>
+		<NavBarButton path="/">
 			{#snippet children()}
 				<House></House>
 				<a
@@ -16,30 +16,30 @@
 				>
 			{/snippet}
 		</NavBarButton>
-		<NavBarButton>
+		<NavBarButton path="/projects">
 			{#snippet children()}
 				<Rocket></Rocket>
 				<a
 					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/">Project</a
+					href="/projects">Projects</a
 				>
 			{/snippet}
 		</NavBarButton>
-		<NavBarButton>
+		<NavBarButton path="/comms">
 			{#snippet children()}
 				<Store></Store>
 				<a
 					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/">Commisions</a
+					href="/comms">Commisions</a
 				>
 			{/snippet}
 		</NavBarButton>
-		<NavBarButton>
+		<NavBarButton path="/contact">
 			{#snippet children()}
 				<Phone></Phone>
 				<a
 					class="size-full duration-250 group-hover:w-auto group-hover:opacity-100 w-0 opacity-0"
-					href="/">Contact</a
+					href="/contact">Contact</a
 				>
 			{/snippet}
 		</NavBarButton>
