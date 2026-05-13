@@ -7,4 +7,18 @@
 @theme {
 	--default-font-family: "Space Mono";
 	--font-pixel-header: "Jersey 25";
+
+	--radius-default-round: 5px;
+
+	--color-text: #e9fcf5;
+	--color-background: #18141c;
+	--color-active-background: #2c2433;
+	--color-primary: #4431d8;
+	--color-secondary: #4c4759;
+	--color-accent: #00c27a;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
 }
