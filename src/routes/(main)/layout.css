@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--default-font-family: "Space Mono";
+
+	--color-text-50: #f5ffe5;
+	--color-text-100: #ebffcc;
+	--color-text-200: #d8ff99;
+	--color-text-300: #c4ff66;
+	--color-text-400: #b1ff33;
+	--color-text-500: #9dff00;
+	--color-text-600: #7ecc00;
+	--color-text-700: #5e9900;
+	--color-text-800: #3f6600;
+	--color-text-900: #1f3300;
+	--color-text-950: #101a00;
+
+	--color-background-50: #f2eff6;
+	--color-background-100: #e4deed;
+	--color-background-200: #c9bddb;
+	--color-background-300: #ae9cc9;
+	--color-background-400: #937bb7;
+	--color-background-500: #785ba4;
+	--color-background-600: #604884;
+	--color-background-700: #483663;
+	--color-background-800: #302442;
+	--color-background-900: #181221;
+	--color-background-950: #0c0910;
+
+	--color-primary-50: #ece8fd;
+	--color-primary-100: #dad0fb;
+	--color-primary-200: #b4a2f6;
+	--color-primary-300: #8f73f2;
+	--color-primary-400: #6944ee;
+	--color-primary-500: #4416e9;
+	--color-primary-600: #3611bb;
+	--color-primary-700: #290d8c;
+	--color-primary-800: #1b095d;
+	--color-primary-900: #0e042f;
+	--color-primary-950: #070217;
+
+	--color-secondary-50: #e7e5ff;
+	--color-secondary-100: #cfccff;
+	--color-secondary-200: #9e99ff;
+	--color-secondary-300: #6e66ff;
+	--color-secondary-400: #3d33ff;
+	--color-secondary-500: #0d00ff;
+	--color-secondary-600: #0a00cc;
+	--color-secondary-700: #080099;
+	--color-secondary-800: #050066;
+	--color-secondary-900: #030033;
+	--color-secondary-950: #01001a;
+
+	--color-accent-50: #e5ffe8;
+	--color-accent-100: #ccffd0;
+	--color-accent-200: #99ffa2;
+	--color-accent-300: #66ff73;
+	--color-accent-400: #33ff44;
+	--color-accent-500: #00ff15;
+	--color-accent-600: #00cc11;
+	--color-accent-700: #00990d;
+	--color-accent-800: #006609;
+	--color-accent-900: #003304;
+	--color-accent-950: #001a02;
+}
+
+body {
+	background-color: var(--color-background-900);
+	color: var(--color-text-100);
+}
+
+p {
+	text-shadow: 1px 1px 3px #00000060;
+}
