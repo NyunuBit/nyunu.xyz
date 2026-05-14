@@ -4,7 +4,7 @@
 </script>
 
 <ul
-	class="overflow-hidden z-40 flex flex-col group rounded-default-round duration-250 shadow-xl/30 bg-background"
+	class="overflow-hidden z-40 hidden md:flex flex-col group rounded-default-round duration-250 shadow-xl/30 bg-background"
 >
 	<NavBarButton path="/">
 		{#snippet children()}
