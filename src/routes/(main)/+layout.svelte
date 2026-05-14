@@ -10,6 +10,9 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <Header></Header>
-<Navbar></Navbar>
+<div class="absolute p-3 flex items-center">
+	<Navbar></Navbar>
+</div>
 {@render children()}
+
 <Footer></Footer>
