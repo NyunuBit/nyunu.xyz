@@ -129,7 +129,7 @@
 
 <!-- comms ad -->
 <section
-	class="md:py-10 lg:px-40 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center justify-between border-b border-text/10 rounded-default-round"
+	class="lg:py-10 lg:px-40 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center justify-between border-b border-text/10 rounded-default-round"
 >
 	<div class="flex gap-2 items-center">
 		<h1
@@ -153,7 +153,7 @@
 
 <!-- demo reel -->
 <section
-	class="md:px-10 md:py-30 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
+	class="xl:px-10 xl:py-30 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
 >
 	<h1
 		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
@@ -172,9 +172,9 @@
 
 <!-- featured projects -->
 <section
-	class="md:p-10 p-2 md:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+	class="xl:p-10 p-2 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
 >
-	<div class="flex justify-center md:items-center gap-5 flex-col m-6">
+	<div class="flex justify-center items-center gap-5 flex-col m-6">
 		<h1 class="font-pixel-header md:text-7xl text-5xl">
 			Featured Projects
 		</h1>
