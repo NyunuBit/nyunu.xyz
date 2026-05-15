@@ -1,6 +1,6 @@
 <script lang="ts">
 	import NavBarButton from "$lib/components/elements/navbar_btn.svelte";
-	import { NavButtons } from "./nav";
+	import { NavButtons } from "$lib/nav";
 </script>
 
 <ul

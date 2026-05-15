@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Logo from "$lib/assets/logo-white.svg";
-	import { NavButtons } from "./nav";
+	import { NavButtons } from "$lib/nav";
 </script>
 
 <header
