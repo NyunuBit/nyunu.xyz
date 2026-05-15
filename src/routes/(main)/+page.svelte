@@ -58,7 +58,7 @@
 			icon: Phone,
 		},
 		{
-			name: "Commisions",
+			name: "Commissions",
 			path: "/comms",
 			icon: Store,
 		},
@@ -198,4 +198,6 @@
 <!-- comms ad -->
 <section
 	class="md:p-10 p-2 md:mx-40 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
-></section>
+>
+	<h1 class="font-pixel-header md:text-7xl text-5xl">Commissions Open!</h1>
+</section>

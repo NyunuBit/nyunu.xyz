@@ -17,7 +17,7 @@ export let NavButtons: {
 		icon: Rocket,
 	},
 	{
-		name: "Commisions",
+		name: "Commissions",
 		path: "/comms",
 		icon: Store,
 	},
