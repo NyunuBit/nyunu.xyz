@@ -92,7 +92,7 @@
 					do:
 				</p>
 				<div
-					class="w-full grid grid-cols-2 border-b border-text/20 pb-8"
+					class="w-full grid md:grid-cols-2 border-b border-text/20 pb-8"
 				>
 					{#each skills as skill}
 						{@const Icon = skill.icon}
@@ -129,7 +129,7 @@
 
 <!-- demo reel -->
 <section
-	class="px-10 md:py-30 py-10 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
+	class="md:px-10 md:py-30 p-4 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
 >
 	<h1
 		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
@@ -194,3 +194,8 @@
 		</div>
 	</div>
 </section>
+
+<!-- comms ad -->
+<section
+	class="md:p-10 p-2 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
+></section>
