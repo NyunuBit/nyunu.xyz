@@ -20,7 +20,9 @@
 	{onclick}
 	class="{style == null
 		? styles.default
-		: styles[style]} {class_var} rounded-default-round cursor-pointer p-1"
+		: styles[
+				style
+			]} {class_var} flex gap-2 rounded-default-round cursor-pointer p-1"
 >
 	{@render children()}
 </button>
