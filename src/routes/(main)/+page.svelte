@@ -80,9 +80,9 @@
 		>
 			<div
 				style="background-image: url({HeroBanner});"
-				class="w-full h-80 p-3 rounded-default-round"
+				class="w-full h-80 p-8 rounded-default-round"
 			>
-				<p class="font-pixel-header text-7xl md:text-left text-center">
+				<p class="font-pixel-header text-7xl text-accent text-left">
 					Nyunu
 				</p>
 			</div>

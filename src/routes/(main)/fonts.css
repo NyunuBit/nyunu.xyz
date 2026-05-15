@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "Redaction35";
+	src: url("/src/lib/assets/fonts/Redaction35-Regular.otf");
+}
+
+@font-face {
+	font-family: "Redaction35";
+	src: url("/src/lib/assets/fonts/Redaction35-Bold.otf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Redaction35";
+	src: url("/src/lib/assets/fonts/Redaction35-Italic.otf");
+	font-weight: italic;
+}
+
+@font-face {
+	font-family: "Vagra";
+	src: url("/src/lib/assets/fonts/vagra-pixel.otf");
+	font-weight: italic;
+}
