@@ -131,11 +131,11 @@
 	class="px-10 md:py-30 py-10 m-1 flex flex-col gap-5 items-center border border-text/10 rounded-default-round justify-center"
 >
 	<h1
-		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-right"
+		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
 	>
 		Demo Reel <span class="italic text-accent">26</span>
 	</h1>
-	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-right">
+	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-left">
 		Every year, i'll <span class="text-text/50">(try)</span> to prepare a video
 		containing a summary of all of my work in a quick and flashy manner!
 	</p>
@@ -147,9 +147,9 @@
 
 <!-- featured projects -->
 <section
-	class="px-10 md:py-30 py-10 m-1 flex flex-col lg:flex-row items-center justify-between border border-text/10 rounded-default-round"
+	class="md:px-10 md:py-30 p-2 m-1 flex flex-col lg:flex-row items-center justify-between border border-text/10 rounded-default-round"
 >
-	<div class="flex gap-5 flex-col mb-10">
+	<div class="flex gap-5 flex-col m-6">
 		<h1 class="font-pixel-header md:text-8xl text-5xl">
 			Featured Projects
 		</h1>
@@ -179,16 +179,25 @@
 			<p class="text-text/50 shadow-none!">Featured Projects!</p>
 		</header>
 		<div
-			class="md:grid flex items-center justify-center flex-col grid-cols-3 md:w-auto w-full h-full p-5"
+			class="grid grid-cols-2 md:grid-cols-3 md:w-auto w-full h-full md:p-5"
 		>
 			<button
-				class="w-50 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+				class="md:w-50 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
 			>
 				<div
 					style="background-image: url('');"
 					class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
 				></div>
-				<p class="w-full md:text-[18px] text-[12px1]">name</p>
+				<p class="w-full md:text-[18px] text-[12px]">name</p>
+			</button>
+			<button
+				class="md:w-50 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+			>
+				<div
+					style="background-image: url('');"
+					class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
+				></div>
+				<p class="w-full md:text-[18px] text-[12px]">name</p>
 			</button>
 		</div>
 	</div>
