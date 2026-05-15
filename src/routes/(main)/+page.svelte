@@ -3,6 +3,7 @@
 	import HeroBanner from "$lib/assets/hero_banner.png";
 	import { Mouse } from "@lucide/svelte";
 	import type { Component } from "svelte";
+	import { goto } from "$app/navigation";
 	import {
 		Music,
 		Gamepad,
@@ -14,6 +15,7 @@
 		Phone,
 		type LucideProps,
 	} from "@lucide/svelte";
+	import Button from "$lib/components/elements/button.svelte";
 
 	let skills: { name: string; path: string; icon: Component<LucideProps> }[] =
 		[
@@ -126,12 +128,14 @@
 
 <!-- demo reel -->
 <section
-	class="px-10 py-30 m-1 flex flex-col gap-5 items-center justify-center"
+	class="px-10 md:py-30 py-10 m-1 flex flex-col gap-5 items-center border border-text/10 rounded-default-round justify-center"
 >
-	<h1 class="font-pixel-header font-bold md:text-9xl text-5xl">
+	<h1
+		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-right"
+	>
 		Demo Reel <span class="italic text-accent">26</span>
 	</h1>
-	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-left">
+	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-right">
 		Every year, i'll <span class="text-text/50">(try)</span> to prepare a video
 		containing a summary of all of my work in a quick and flashy manner!
 	</p>
@@ -141,7 +145,44 @@
 	</video>
 </section>
 
-<!-- projects -->
-<section class="px-10 py-30 flex flex-row gap-5 items-center justify-between">
-	<h1 class="font-pixel-header md:text-9xl text-5xl">Featured Projects</h1>
+<!-- featured projects -->
+<section
+	class="px-10 md:py-30 py-10 m-1 flex flex-col lg:flex-row items-center justify-between border border-text/10 rounded-default-round"
+>
+	<div class="flex gap-5 flex-col mb-10">
+		<h1 class="font-pixel-header md:text-8xl text-5xl">
+			Featured Projects
+		</h1>
+		<div class="border max-w-100 w-full border-t border-text/20"></div>
+
+		<p class=" max-w-100 w-full text-text/70">
+			Here's brief mentions of the projects i think i did my <span
+				class="font-bold text-accent">BEST</span
+			>!
+		</p>
+
+		<Button
+			class="w-30"
+			onclick={() => {
+				goto("/projects");
+			}}
+		>
+			{#snippet children()}
+				<p>View more!</p>
+			{/snippet}
+		</Button>
+	</div>
+	<div
+		class="md:grid flex items-center justify-center flex-col grid-cols-3 md:w-auto w-full h-full border border-text/20 p-5 bg-text/5 rounded-default-round"
+	>
+		<button
+			class="w-50 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+		>
+			<div
+				style="background-image: url('');"
+				class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
+			></div>
+			<p class="w-full md:text-[18px] text-[12px1]">name</p>
+		</button>
+	</div>
 </section>
