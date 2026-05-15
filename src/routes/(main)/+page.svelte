@@ -88,7 +88,8 @@
 				<p class="text-text/75 mb-2">
 					I'm <span class="text-accent font-black">Nyunu</span>, but
 					you can call me
-					<span class="text-accent font-black">Ny</span>. And i do:
+					<span class="text-accent font-black">Ny</span>. I'm 16 and i
+					do:
 				</p>
 				<div
 					class="w-full grid grid-cols-2 border-b border-text/20 pb-8"
