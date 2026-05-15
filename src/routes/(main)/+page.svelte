@@ -155,7 +155,7 @@
 		</h1>
 		<div class="border max-w-100 w-full border-t border-text/20"></div>
 
-		<p class=" max-w-100 w-full text-text/70">
+		<p class=" max-w-100 w-full text-text/70 mb-10">
 			Here's brief mentions of the projects i think i did my <span
 				class="font-bold text-accent">BEST</span
 			>!
@@ -172,17 +172,24 @@
 			{/snippet}
 		</Button>
 	</div>
-	<div
-		class="md:grid flex items-center justify-center flex-col grid-cols-3 md:w-auto w-full h-full border border-text/20 p-5 bg-text/5 rounded-default-round"
-	>
-		<button
-			class="w-50 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+	<div class="border border-text/20 bg-text/5 rounded-default-round">
+		<header
+			class="w-full rounded-default-round border-b border-text/20 p-1"
 		>
-			<div
-				style="background-image: url('');"
-				class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
-			></div>
-			<p class="w-full md:text-[18px] text-[12px1]">name</p>
-		</button>
+			<p class="text-text/50 shadow-none!">Featured Projects!</p>
+		</header>
+		<div
+			class="md:grid flex items-center justify-center flex-col grid-cols-3 md:w-auto w-full h-full p-5"
+		>
+			<button
+				class="w-50 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+			>
+				<div
+					style="background-image: url('');"
+					class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
+				></div>
+				<p class="w-full md:text-[18px] text-[12px1]">name</p>
+			</button>
+		</div>
 	</div>
 </section>
