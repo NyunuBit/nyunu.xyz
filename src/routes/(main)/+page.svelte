@@ -148,15 +148,15 @@
 
 <!-- featured projects -->
 <section
-	class="md:p-10 p-2 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
+	class="md:p-10 p-2 md:mx-20 m- flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
 >
-	<div class="flex gap-5 flex-col m-6">
+	<div class="flex justify-center md:items-center gap-5 flex-col m-6">
 		<h1 class="font-pixel-header md:text-7xl text-5xl">
 			Featured Projects
 		</h1>
 		<div class="border max-w-100 w-full border-t border-text/20"></div>
 
-		<p class=" max-w-100 w-full text-text/70 mb-10">
+		<p class=" max-w-100 w-full text-text/70 md:text-center mb-10">
 			Here's brief mentions of the projects i think i did my <span
 				class="font-bold text-accent">BEST</span
 			>!
@@ -180,7 +180,7 @@
 			<p class="text-text/50 shadow-none!">Featured Projects!</p>
 		</header>
 		<div
-			class="grid grid-cols-2 md:grid-cols-4 md:w-auto w-full h-full md:p-5"
+			class="grid grid-cols-2 sm:grid-cols-4 md:w-auto w-full h-full md:p-5"
 		>
 			<button
 				class="md:w-50 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
