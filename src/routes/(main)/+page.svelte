@@ -92,7 +92,7 @@
 					do:
 				</p>
 				<div
-					class="w-full grid md:grid-cols-2 border-b border-text/20 pb-8"
+					class="w-full grid sm:grid-cols-2 border-b border-text/20 pb-8"
 				>
 					{#each skills as skill}
 						{@const Icon = skill.icon}
