@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Logo from "$lib/assets/logo.svg";
+	import HeroBanner from "$lib/assets/hero_banner.png";
 	import type { Component } from "svelte";
 	import {
 		Music,
@@ -68,7 +69,8 @@
 
 <!-- hero -->
 <div
-	class=" w-full bg-[url('https://i.pinimg.com/1200x/df/f9/db/dff9db4ef3dd6e91b4e6f3130fd7dd0c.jpg')] bg-cover bg-no-repeat h-screen"
+	style="background-image: url({HeroBanner});"
+	class=" w-full bg-cover bg-no-repeat h-screen"
 >
 	<div
 		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex justify-center items-center"
@@ -77,7 +79,8 @@
 			class="border-2 bg-background border-background max-w-157.5 w-full max-h-157.5 h-full rounded-default-round"
 		>
 			<div
-				class="w-full h-80 p-3 bg-[url('https://i.pinimg.com/1200x/df/f9/db/dff9db4ef3dd6e91b4e6f3130fd7dd0c.jpg')] rounded-default-round"
+				style="background-image: url({HeroBanner});"
+				class="w-full h-80 p-3 rounded-default-round"
 			>
 				<p class="font-pixel-header text-7xl md:text-left text-center">
 					Nyunu
