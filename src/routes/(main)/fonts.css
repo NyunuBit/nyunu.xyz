@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Redaction35";
 	src: url("/src/lib/assets/fonts/Redaction35-Regular.otf");
+	font-weight: normal;
 }
 
 @font-face {

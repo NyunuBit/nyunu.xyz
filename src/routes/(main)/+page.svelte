@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Logo from "$lib/assets/logo.svg";
 	import HeroBanner from "$lib/assets/hero_banner.png";
+	import { Mouse } from "@lucide/svelte";
 	import type { Component } from "svelte";
 	import {
 		Music,
@@ -68,12 +69,12 @@
 </script>
 
 <!-- hero -->
-<div
+<section
 	style="background-image: url({HeroBanner});"
 	class=" w-full bg-cover bg-no-repeat h-screen"
 >
 	<div
-		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex justify-center items-center"
+		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex flex-col gap-20 justify-center items-center"
 	>
 		<div
 			class="border-2 bg-background border-background max-w-157.5 w-full max-h-157.5 h-full rounded-default-round"
@@ -120,5 +121,10 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="gap-2 flex animate-bounce">
+			<Mouse></Mouse>
+			<span class="text-text/50">|</span> Scroll for more.
+		</div>
 	</div>
-</div>
+</section>
