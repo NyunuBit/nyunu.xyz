@@ -7,7 +7,7 @@
 	import {
 		Music,
 		Gamepad,
-		Diamond,
+		ExternalLink,
 		Film,
 		Code,
 		Pencil,
@@ -129,7 +129,7 @@
 
 <!-- demo reel -->
 <section
-	class="md:px-10 md:py-30 p-4 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
+	class="md:px-10 md:py-30 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
 >
 	<h1
 		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
@@ -148,7 +148,7 @@
 
 <!-- featured projects -->
 <section
-	class="md:p-10 p-2 md:mx-20 m- flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+	class="md:p-10 p-2 md:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
 >
 	<div class="flex justify-center md:items-center gap-5 flex-col m-6">
 		<h1 class="font-pixel-header md:text-7xl text-5xl">
@@ -163,12 +163,12 @@
 		</p>
 
 		<Button
-			class="w-30"
 			onclick={() => {
 				goto("/projects");
 			}}
 		>
 			{#snippet children()}
+				<ExternalLink class="w-5"></ExternalLink>
 				<p>View more!</p>
 			{/snippet}
 		</Button>
@@ -197,5 +197,5 @@
 
 <!-- comms ad -->
 <section
-	class="md:p-10 p-2 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
+	class="md:p-10 p-2 md:mx-40 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
 ></section>
