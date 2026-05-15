@@ -127,6 +127,30 @@
 	</div>
 </section>
 
+<!-- comms ad -->
+<section
+	class="md:py-10 lg:px-40 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center justify-between border-b border-text/10 rounded-default-round"
+>
+	<div class="flex gap-2 items-center">
+		<h1
+			class="font-pixel-header font-bold md:text-7xl text-4xl shadow-none!"
+		>
+			Open Commissions!
+		</h1>
+	</div>
+	<Button
+		class="p-3 bg-background! hover:bg-background/60! duration-200 border-3 border-background  text-text"
+		onclick={() => {
+			goto("/comms");
+		}}
+	>
+		{#snippet children()}
+			<p class="lg:block hidden">Secure your slot!</p>
+			<ExternalLink class="lg:hidden block"></ExternalLink>
+		{/snippet}
+	</Button>
+</section>
+
 <!-- demo reel -->
 <section
 	class="md:px-10 md:py-30 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
@@ -193,11 +217,4 @@
 			</button>
 		</div>
 	</div>
-</section>
-
-<!-- comms ad -->
-<section
-	class="md:p-10 p-2 md:mx-40 m-1 flex flex-col lg:flex-row items-center justify-between border-b border-text/10 rounded-default-round"
->
-	<h1 class="font-pixel-header md:text-7xl text-5xl">Commissions Open!</h1>
 </section>
