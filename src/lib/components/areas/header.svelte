@@ -3,7 +3,7 @@
 	import { NavButtons } from "$lib/nav";
 
 	let quotes: string[] = [
-		"The new labirhin????",
+		"larphin",
 		"there for. I. Am",
 		"coding websites is kinda boring ngl",
 		"web dev sucks",
