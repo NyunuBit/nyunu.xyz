@@ -1,6 +1,20 @@
 <script lang="ts">
 	import Logo from "$lib/assets/logo-white.svg";
 	import { NavButtons } from "$lib/nav";
+
+	let quotes: string[] = [""];
+
+	let current_quote = $state(getRandomQuote());
+
+	function getRandomQuote(): string {
+		return quotes[Math.random() * quotes.length];
+	}
+
+	import { afterNavigate } from "$app/navigation";
+
+	afterNavigate((navigation) => {
+		current_quote = getRandomQuote();
+	});
 </script>
 
 <header
@@ -13,7 +27,7 @@
 		<img src={Logo} alt="logo" width="32" />
 	</a>
 	<div class="text-text/50 flex overflow-x-auto overflow-y-hidden">
-		<p class="hidden md:block">Commisions closed</p>
+		<p class="hidden md:block">{current_quote}</p>
 		{#each NavButtons as button}
 			<a
 				href={button.path}
