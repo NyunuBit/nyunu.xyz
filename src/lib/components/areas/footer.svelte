@@ -1,5 +1,5 @@
 <div
-	class="bottom-0 h-8 p-2 w-full flex fixed justify-between items-center bg-background"
+	class="bottom-0 h-8 p-2 w-full flex sticky justify-between items-center bg-background"
 >
 	<br />
 	<br />
