@@ -2,12 +2,19 @@
 	import Logo from "$lib/assets/logo-white.svg";
 	import { NavButtons } from "$lib/nav";
 
-	let quotes: string[] = [""];
+	let quotes: string[] = [
+		"The new labirhin????",
+		"there for. I. Am",
+		"coding websites is kinda boring ngl",
+		"web dev sucks",
+		"yes, i'm a rustatian",
+		"i know i'm a furry, but please don't call me one",
+	];
 
 	let current_quote = $state(getRandomQuote());
 
 	function getRandomQuote(): string {
-		return quotes[Math.random() * quotes.length];
+		return quotes[Math.floor(Math.random() * quotes.length)];
 	}
 
 	import { afterNavigate } from "$app/navigation";
