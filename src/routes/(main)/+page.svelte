@@ -24,28 +24,23 @@
 			},
 			{
 				name: "Games",
-				path: "",
+				path: "https://nyunu.itch.io/",
 				icon: Gamepad,
 			},
 			{
-				name: "Animations",
-				path: "",
-				icon: Diamond,
-			},
-			{
-				name: "Video Editing",
-				path: "",
+				name: "Video Editing, Animating",
+				path: "https://www.youtube.com/@nyunusin",
 				icon: Film,
 			},
 
 			{
 				name: "Programming",
-				path: "",
+				path: "https://github.com/NyunuBit",
 				icon: Code,
 			},
 			{
 				name: "Art",
-				path: "",
+				path: "https://bsky.app/profile/nyunu.bsky.social",
 				icon: Pencil,
 			},
 		];
@@ -71,7 +66,7 @@
 <!-- hero -->
 <section
 	style="background-image: url({HeroBanner});"
-	class=" w-full bg-cover bg-no-repeat h-screen"
+	class="w-full bg-cover bg-no-repeat h-screen"
 >
 	<div
 		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex flex-col gap-20 justify-center items-center"
@@ -81,7 +76,7 @@
 		>
 			<div
 				style="background-image: url({HeroBanner});"
-				class="w-full h-80 p-8 rounded-default-round"
+				class="w-full h-80 p-8 bg-right rounded-default-round"
 			>
 				<p class="font-pixel-header text-7xl text-accent text-left">
 					Nyunu
@@ -127,4 +122,26 @@
 			<span class="text-text/50">|</span> Scroll for more.
 		</div>
 	</div>
+</section>
+
+<!-- demo reel -->
+<section
+	class="px-10 py-30 m-1 flex flex-col gap-5 items-center justify-center"
+>
+	<h1 class="font-pixel-header font-bold md:text-9xl text-5xl">
+		Demo Reel <span class="italic text-accent">26</span>
+	</h1>
+	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-left">
+		Every year, i'll <span class="text-text/50">(try)</span> to prepare a video
+		containing a summary of all of my work in a quick and flashy manner!
+	</p>
+	<div class="border max-w-100 w-full border-t border-text/20"></div>
+	<video controls src="" class="aspect-video max-w-300 w-full bg-black">
+		<track kind="captions" />
+	</video>
+</section>
+
+<!-- projects -->
+<section class="px-10 py-30 flex flex-row gap-5 items-center justify-between">
+	<h1 class="font-pixel-header md:text-9xl text-5xl">Featured Projects</h1>
 </section>

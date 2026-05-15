@@ -3,7 +3,9 @@
 	import { NavButtons } from "./nav";
 </script>
 
-<div class="p-1 sticky w-full bg-background gap-2 flex items-center">
+<header
+	class="p-1 top-0 bottom-0 z-50 sticky w-full bg-background gap-2 flex items-center"
+>
 	<a
 		href="/straw"
 		class="flex rounded-default-round hover:bg-text/10 p-1 size-8"
@@ -21,4 +23,4 @@
 			</a>
 		{/each}
 	</div>
-</div>
+</header>
