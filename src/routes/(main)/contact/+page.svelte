@@ -32,7 +32,7 @@
 					<h1
 						class="text-5xl font-pixel-header md:text-left text-center"
 					>
-						Contact
+						"Hello, Nyunu!"
 					</h1>
 					<p class="text-text/80 max-w-90 md:text-left text-center">
 						Here are the places where you can <span
