@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Logo from "$lib/assets/logo.svg";
 	import HeroBanner from "$lib/assets/hero_banner.png";
 	import { Mouse } from "@lucide/svelte";
 	import type { Component } from "svelte";
@@ -144,10 +143,8 @@
 			goto("/comms");
 		}}
 	>
-		{#snippet children()}
-			<p class="lg:block hidden">Secure your slot!</p>
-			<ExternalLink class="lg:hidden block"></ExternalLink>
-		{/snippet}
+		<p class="lg:block hidden">Secure your slot!</p>
+		<ExternalLink class="lg:hidden block"></ExternalLink>
 	</Button>
 </section>
 
@@ -172,13 +169,13 @@
 
 <!-- featured projects -->
 <section
-	class="xl:py-2 xl:px-40 p-2 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+	class="xl:py-10 xl:px-40 px-2 py-10 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
 >
 	<div class="flex justify-center items-center gap-5 flex-col m-6">
-		<h1 class="font-pixel-header md:text-7xl text-5xl">
+		<h1 class="font-pixel-header text-center md:text-7xl text-5xl">
 			Featured Projects
 		</h1>
-		<div class="border max-w-100 w-full border-t border-text/20"></div>
+		<div class="max-w-100 w-full border-t border-text/20"></div>
 
 		<p class=" max-w-100 w-full text-text/70 md:text-center mb-10">
 			Here's brief mentions of the projects i think i did my <span
@@ -191,17 +188,17 @@
 				goto("/projects");
 			}}
 		>
-			{#snippet children()}
-				<ExternalLink class="w-5"></ExternalLink>
-				<p>View more!</p>
-			{/snippet}
+			<ExternalLink class="w-5"></ExternalLink>
+			<p>View more!</p>
 		</Button>
 	</div>
 	<div class="border border-text/20 bg-text/5 rounded-default-round">
 		<header
 			class="w-full rounded-default-round border-b border-text/20 p-1"
 		>
-			<p class="text-text/50 shadow-none!">Featured Projects!</p>
+			<p class="text-text/50 shadow-none! xl:text-center text-left">
+				Featured Projects!
+			</p>
 		</header>
 		<div
 			class="grid grid-cols-2 sm:grid-cols-4 md:w-auto w-full h-full md:p-5"
@@ -217,4 +214,31 @@
 			</button>
 		</div>
 	</div>
+</section>
+
+<!-- Contact -->
+<section
+	class="xl:py-10 xl:px-40 px-2 py-10 xl:gap-10 gap-4 xl:mx-40 flex flex-col items-center justify-center rounded-default-round"
+>
+	<h1 class="font-pixel-header text-center md:text-7xl text-5xl">
+		Contact me!
+	</h1>
+	<div class="max-w-50 w-full border-t border-text/20"></div>
+	<div class="flex *:p-3 gap-2">
+		<Button>
+			<p>Contact</p>
+		</Button>
+
+		<Button style="secondary">
+			<p>Commissions</p>
+		</Button>
+	</div>
+</section>
+
+<section
+	class="xl:py-5 xl:px-40 p-2 gap-10 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+>
+	<h1 class="font-pixel-header text-text/50 md:text-2xl text-xl">
+		Thanks for scrolling :3
+	</h1>
 </section>
