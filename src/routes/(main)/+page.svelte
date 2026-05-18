@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HeroBanner from "$lib/assets/hero_banner.png";
-	import { Mouse } from "@lucide/svelte";
+	import { Mouse, Rocket } from "@lucide/svelte";
 	import type { Component } from "svelte";
 	import { goto } from "$app/navigation";
 	import {
@@ -61,6 +61,11 @@
 			path: "/comms",
 			icon: Store,
 		},
+		{
+			name: "Projects",
+			path: "/projects",
+			icon: Rocket,
+		},
 	];
 </script>
 
@@ -73,7 +78,7 @@
 		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex flex-col gap-20 justify-center items-center"
 	>
 		<div
-			class="border-2 bg-background border-background max-w-157.5 w-full max-h-157.5 h-full rounded-default-round"
+			class="border-2 bg-background border-background max-w-157.5 w-full sm:max-h-157.5 max-h-180 h-full rounded-default-round"
 		>
 			<div
 				style="background-image: url({HeroBanner});"
@@ -104,7 +109,7 @@
 						>
 					{/each}
 				</div>
-				<div class="w-full grid grid-cols-2 pb-2">
+				<div class="w-full grid sm:grid-cols-3 pb-2 md:pt-0 pt-4">
 					{#each cta_buttons as cta}
 						{@const Icon = cta.icon}
 						<a
@@ -119,7 +124,7 @@
 			</div>
 		</div>
 
-		<div class="gap-2 flex animate-bounce">
+		<div class="gap-2 sm:flex hidden animate-bounce">
 			<Mouse></Mouse>
 			<span class="text-text/50">|</span> Scroll for more.
 		</div>
