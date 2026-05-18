@@ -113,7 +113,7 @@
 					{#each cta_buttons as cta}
 						{@const Icon = cta.icon}
 						<a
-							class="flex gap-2 m-1 rounded-default-round hover:bg-primary/80 duration-100 p-2"
+							class="flex gap-2 m-1 rounded-default-round hover:bg-primary/80 border-b-2 border-secondary/50 hover:border-background/0 duration-100 p-2"
 							href={cta.path}
 						>
 							<Icon class="w-4"></Icon>
