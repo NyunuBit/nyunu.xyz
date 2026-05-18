@@ -225,11 +225,20 @@
 	</h1>
 	<div class="max-w-50 w-full border-t border-text/20"></div>
 	<div class="flex *:p-3 gap-2">
-		<Button>
+		<Button
+			onclick={() => {
+				goto("/contact");
+			}}
+		>
 			<p>Contact</p>
 		</Button>
 
-		<Button style="secondary">
+		<Button
+			style="secondary"
+			onclick={() => {
+				goto("/comms");
+			}}
+		>
 			<p>Commissions</p>
 		</Button>
 	</div>
