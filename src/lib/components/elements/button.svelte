@@ -12,7 +12,7 @@
 	} = $props();
 
 	let styles: { [key: string]: string } = {
-		default: "bg-primary hover:bg-primary/90",
+		default: "bg-primary hover:bg-primary/90 inset-shadow-2xs",
 	};
 </script>
 
