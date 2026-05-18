@@ -5,7 +5,7 @@
 		onclick,
 		class: class_var,
 	}: {
-		children: any;
+		children?: any;
 		style?: string;
 		onclick?: () => void;
 		class?: string;
@@ -25,5 +25,5 @@
 				style
 			]} {class_var} flex gap-2 rounded-default-round cursor-pointer p-1"
 >
-	{@render children()}
+	{@render children?.()}
 </button>
