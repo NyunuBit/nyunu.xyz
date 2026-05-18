@@ -12,9 +12,7 @@
 </svelte:head>
 
 <Header></Header>
-<div class="fixed z-40 p-3 flex items-center">
-	<Navbar></Navbar>
-</div>
+<Navbar></Navbar>
 {@render children()}
 
 <Footer></Footer>
