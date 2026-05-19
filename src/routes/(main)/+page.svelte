@@ -11,6 +11,7 @@
 		Code,
 		Pencil,
 		Store,
+		MapPin,
 		Phone,
 		type LucideProps,
 	} from "@lucide/svelte";
@@ -135,7 +136,7 @@
 
 <!-- comms ad -->
 <section
-	class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between border-b border-text/10 rounded-default-round"
+	class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between rounded-default-round"
 >
 	<div class="flex gap-2 items-center">
 		<h1
@@ -157,7 +158,7 @@
 
 <!-- demo reel -->
 <section
-	class="xl:px-70 xl:py-10 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center border-b border-text/10 rounded-default-round justify-center"
+	class="xl:px-70 xl:py-10 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center rounded-default-round justify-center"
 >
 	<h1
 		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
@@ -174,9 +175,53 @@
 	</video>
 </section>
 
+<!-- about -->
+<section
+	class="xl:mx-40 mx-0 flex md:flex-row min-h-[50vh] flex-col items-stretch justify-stretch rounded-default-round"
+>
+	<div
+		style="background-image: url('https://as2.ftcdn.net/jpg/02/18/72/73/1000_F_218727336_yFWOEXi4dqc01tCWSNZg2JSa0TPHtz4h.webp');"
+		class="flex-1 bg-cover bg-center rounded-4xl bg-no-repeat mask-radial-[100%_100%] mask-radial-from-0% md:mask-radial-at-left mask-radial-at-bottom"
+		role="img"
+		aria-label="w"
+	></div>
+	<div
+		class="flex justify-center items-center md:items-end flex-1 gap-5 flex-col m-6"
+	>
+		<h1
+			class="font-pixel-header md:text-right text-center md:text-7xl text-5xl w-auto"
+		>
+			More About!
+		</h1>
+		<div class="max-w-100 w-full border-t border-text/20"></div>
+
+		<p class="w-full text-text/70 md:text-right text-center mb-10">
+			Hey! i'm Nyunu <span class="text-text/40"
+				>(not real name for privacy)</span
+			>, i'm an 16 year old creative, interested in audiovisual and
+			studying IT
+		</p>
+
+		<div class="flex gap-2 text-accent/80">
+			<MapPin></MapPin>
+			Based in <span class="font-black">Brazil</span>
+		</div>
+		<hr class="h-10" />
+		<Button
+			class=""
+			onclick={() => {
+				goto("/contact");
+			}}
+		>
+			<ExternalLink></ExternalLink>
+			<p>Contact</p>
+		</Button>
+	</div>
+</section>
+
 <!-- featured projects -->
 <section
-	class="xl:py-10 py-10 xl:mx-40 mx-0 flex md:flex-row flex-col items-center md:justify-between justify-center border-b border-text/10 rounded-default-round"
+	class="xl:py-10 py-10 xl:mx-40 min-h-[50vh] mx-0 flex md:flex-row flex-col items-center md:justify-between justify-center rounded-default-round"
 >
 	<div
 		class="flex justify-center items-center md:items-start gap-5 flex-col m-6"
@@ -214,7 +259,7 @@
 			</p>
 		</header>
 		<div
-			class="grid grid-cols-2 sm:grid-cols-4 md:w-auto w-full h-full md:p-5"
+			class="grid grid-cols-2 sm:grid-cols-3 md:w-auto w-full h-full md:p-5"
 		>
 			<button
 				class="md:w-50 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
@@ -229,36 +274,8 @@
 	</div>
 </section>
 
-<!-- Contact -->
 <section
-	class="xl:py-10 xl:px-40 px-2 py-10 xl:gap-10 gap-4 xl:mx-40 flex flex-col items-center justify-center rounded-default-round"
->
-	<h1 class="font-pixel-header text-center md:text-7xl text-5xl">
-		Contact me!
-	</h1>
-	<div class="max-w-50 w-full border-t border-text/20"></div>
-	<div class="flex *:p-3 gap-2">
-		<Button
-			onclick={() => {
-				goto("/contact");
-			}}
-		>
-			<p>Contact</p>
-		</Button>
-
-		<Button
-			style="secondary"
-			onclick={() => {
-				goto("/comms");
-			}}
-		>
-			<p>Commissions</p>
-		</Button>
-	</div>
-</section>
-
-<section
-	class="xl:py-5 xl:px-40 p-2 gap-10 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+	class="xl:py-5 xl:px-40 p-2 gap-10 xl:mx-40 flex flex-col items-center justify-center rounded-default-round"
 >
 	<h1 class="font-pixel-header text-text/50 md:text-2xl text-xl">
 		Thanks for scrolling :3
