@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Modal from "$lib/components/areas/modal.svelte";
+	import ProjectModal from "$lib/components/areas/project_modal.svelte";
+	let dialog: HTMLDialogElement | undefined = $state(undefined);
 </script>
-
-<Modal open><p>a</p></Modal>
 
 <main class="md:m-20 m-2 grow">
 	<h1
@@ -13,7 +13,9 @@
 	<section
 		class="p-2 grid gap-2 md:grid-cols-4 grid-cols-1 bg-black/20 border border-text/5 rounded-b-default-round"
 	>
+		<ProjectModal bind:dialog title="untitled mess"></ProjectModal>
 		<button
+			onclick={() => dialog?.showModal()}
 			class="rounded-default-round bg-background border p-2 aspect-square flex flex-col cursor-pointer items-stretch text-left border-text/5 hover:border-text/15"
 		>
 			<div

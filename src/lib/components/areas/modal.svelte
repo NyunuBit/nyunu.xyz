@@ -4,7 +4,7 @@
 	import { X } from "@lucide/svelte";
 
 	let {
-		dialog,
+		dialog = $bindable(),
 		open = false,
 		header,
 		children,
@@ -32,7 +32,7 @@
 	class=" p-3 bg-background text-text border border-text/20 *:focus:outline-0 left-[50%] top-[50%] animate-popup backdrop:animate-fade rounded-default-round backdrop:bg-background/50 backdrop:backdrop-grayscale-100"
 >
 	<div>
-		<header>
+		<header class="flex justify-between items-center">
 			{@render header?.()}
 			<Button onclick={() => dialog?.close()} style="ghost">
 				<X></X>

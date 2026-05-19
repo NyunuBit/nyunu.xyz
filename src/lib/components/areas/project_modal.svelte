@@ -2,7 +2,7 @@
 	import Modal from "./modal.svelte";
 
 	let {
-		dialog,
+		dialog = $bindable(),
 		title,
 	}: {
 		dialog?: HTMLDialogElement;
@@ -10,7 +10,7 @@
 	} = $props();
 </script>
 
-<Modal {dialog}>
+<Modal bind:dialog>
 	{#snippet header()}
 		<p>{title}</p>
 	{/snippet}
