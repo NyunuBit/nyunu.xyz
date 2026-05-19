@@ -3,12 +3,10 @@
 >
 	<br />
 	<br />
-	<p class="text-text/70 m-0">
-		<span
-			>This Website is <a
-				class="underline hover:text-accent"
-				href="https://github.com/NyunuBit/nyunu.xyz">Open Source</a
-			></span
-		> | By Nyunu
-	</p>
+	<a
+		class="text-text/70 m-0 hover:underline hover:text-accent"
+		href="https://github.com/NyunuBit/nyunu.xyz"
+	>
+		© 2026 Nyunu - All rights reserved
+	</a>
 </div>
