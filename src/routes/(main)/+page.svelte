@@ -179,6 +179,7 @@
 <section
 	class="xl:mx-40 mx-0 flex md:flex-row min-h-[50vh] flex-col items-stretch justify-stretch rounded-default-round"
 >
+	<!-- TODO: Change this stock image -->
 	<div
 		style="background-image: url('https://as2.ftcdn.net/jpg/02/18/72/73/1000_F_218727336_yFWOEXi4dqc01tCWSNZg2JSa0TPHtz4h.webp');"
 		class="flex-1 bg-cover bg-center rounded-4xl bg-no-repeat mask-radial-[100%_100%] mask-radial-from-0% md:mask-radial-at-left mask-radial-at-bottom"
