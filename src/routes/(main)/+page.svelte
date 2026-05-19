@@ -135,7 +135,7 @@
 
 <!-- comms ad -->
 <section
-	class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center justify-between border-b border-text/10 rounded-default-round"
+	class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between border-b border-text/10 rounded-default-round"
 >
 	<div class="flex gap-2 items-center">
 		<h1
@@ -145,7 +145,7 @@
 		</h1>
 	</div>
 	<Button
-		class="p-3 bg-background! hover:bg-background/60! duration-200 border-3 border-background  text-text"
+		class="p-3 bg-background! hover:bg-background/60! duration-200 border-3  border-background  text-text"
 		onclick={() => {
 			goto("/comms");
 		}}
