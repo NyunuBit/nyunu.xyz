@@ -78,11 +78,11 @@
 		class="p-1 w-full h-full bg-background/50 backdrop-blur-2xl flex flex-col gap-20 justify-center items-center"
 	>
 		<div
-			class="border-2 bg-background border-background max-w-157.5 w-full sm:max-h-157.5 max-h-180 h-full rounded-default-round"
+			class="border-2 bg-background border-background max-w-157.5 w-full sm:max-h-157.5 max-h-200 h-full rounded-default-round"
 		>
 			<div
 				style="background-image: url({HeroBanner});"
-				class="w-full h-80 p-8 bg-right bg-no-repeat bg-contain rounded-default-round"
+				class="w-full h-80 p-8 bg-right bg-no-repeat bg-cover rounded-default-round"
 			>
 				<p
 					class="font-pixel-header text-7xl text-accent text-shadow-lg text-left"
