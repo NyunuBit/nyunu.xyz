@@ -29,7 +29,7 @@
 <dialog
 	bind:this={dialog}
 	{id}
-	class=" p-3 bg-background text-text border border-text/20 *:focus:outline-0 left-[50%] top-[50%] animate-popup backdrop:animate-fade rounded-default-round backdrop:bg-background/50 backdrop:backdrop-grayscale-100"
+	class=" p-3 bg-background text-text border border-text/20 max-w-full *:focus:outline-0 inset-0 m-auto animate-popup backdrop:animate-fade rounded-default-round backdrop:bg-background/50 backdrop:backdrop-grayscale-100"
 >
 	<div>
 		<header class="flex justify-between items-center">
