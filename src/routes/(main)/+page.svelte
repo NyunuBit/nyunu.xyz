@@ -82,7 +82,7 @@
 		>
 			<div
 				style="background-image: url({HeroBanner});"
-				class="w-full h-80 p-8 bg-right rounded-default-round"
+				class="w-full h-80 p-8 bg-right bg-no-repeat bg-contain rounded-default-round"
 			>
 				<p
 					class="font-pixel-header text-7xl text-accent text-shadow-lg text-left"
