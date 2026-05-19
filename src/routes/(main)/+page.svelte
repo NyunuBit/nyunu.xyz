@@ -29,7 +29,7 @@
 				icon: Gamepad,
 			},
 			{
-				name: "Video Editing, Animating",
+				name: "Audiovisual",
 				path: "https://www.youtube.com/@nyunusin",
 				icon: Film,
 			},
@@ -84,7 +84,9 @@
 				style="background-image: url({HeroBanner});"
 				class="w-full h-80 p-8 bg-right rounded-default-round"
 			>
-				<p class="font-pixel-header text-7xl text-accent text-left">
+				<p
+					class="font-pixel-header text-7xl text-accent text-shadow-lg text-left"
+				>
 					Nyunu
 				</p>
 			</div>
@@ -174,15 +176,21 @@
 
 <!-- featured projects -->
 <section
-	class="xl:py-10 xl:px-40 px-2 py-10 xl:mx-40 flex flex-col items-center justify-center border-b border-text/10 rounded-default-round"
+	class="xl:py-10 py-10 xl:mx-40 mx-0 flex md:flex-row flex-col items-center md:justify-between justify-center border-b border-text/10 rounded-default-round"
 >
-	<div class="flex justify-center items-center gap-5 flex-col m-6">
-		<h1 class="font-pixel-header text-center md:text-7xl text-5xl">
+	<div
+		class="flex justify-center items-center md:items-start gap-5 flex-col m-6"
+	>
+		<h1
+			class="font-pixel-header md:text-left text-center md:text-7xl text-5xl"
+		>
 			Featured Projects
 		</h1>
 		<div class="max-w-100 w-full border-t border-text/20"></div>
 
-		<p class=" max-w-100 w-full text-text/70 md:text-center mb-10">
+		<p
+			class=" max-w-100 w-full text-text/70 md:text-left text-center mb-10"
+		>
 			Here's brief mentions of the projects i think i did my <span
 				class="font-bold text-accent">BEST</span
 			>!
