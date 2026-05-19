@@ -263,13 +263,13 @@
 			class="grid grid-cols-2 sm:grid-cols-4 md:w-auto w-full h-full md:p-5"
 		>
 			<button
-				class="md:w-45 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+				class="md:w-45 w-40 rounded-default-round p-2 flex flex-col cursor-pointer shadow-lg gap-2 hover:bg-text/19"
 			>
 				<div
-					style="background-image: url('');"
+					style="background-image: url('https://as2.ftcdn.net/jpg/02/18/72/73/1000_F_218727336_yFWOEXi4dqc01tCWSNZg2JSa0TPHtz4h.webp');"
 					class="aspect-square w-full bg-cover bg-center bg-no-repeat border border-text/20"
 				></div>
-				<p class="w-full md:text-[18px] text-[12px]">name</p>
+				<p class="w-full md:text-[18px] text-[12px]">Lorum Ipsum</p>
 			</button>
 		</div>
 	</div>
