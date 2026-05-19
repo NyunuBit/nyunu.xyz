@@ -225,7 +225,7 @@
 	class="xl:py-10 py-10 xl:mx-40 min-h-[50vh] mx-0 flex md:flex-row flex-col items-center md:justify-between justify-center rounded-default-round"
 >
 	<div
-		class="flex justify-center items-center md:items-start gap-5 flex-col m-6"
+		class="flex justify-center items-center md:items-start gap-5 flex-col m-6 flex-1"
 	>
 		<h1
 			class="font-pixel-header md:text-left text-center md:text-7xl text-5xl"
@@ -260,10 +260,10 @@
 			</p>
 		</header>
 		<div
-			class="grid grid-cols-2 sm:grid-cols-3 md:w-auto w-full h-full md:p-5"
+			class="grid grid-cols-2 sm:grid-cols-4 md:w-auto w-full h-full md:p-5"
 		>
 			<button
-				class="md:w-50 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
+				class="md:w-45 w-40 rounded-default-round p-2 flex flex-col cursor-pointer gap-2 hover:bg-text/19"
 			>
 				<div
 					style="background-image: url('');"
