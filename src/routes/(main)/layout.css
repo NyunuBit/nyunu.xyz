@@ -17,6 +17,29 @@
 	--color-primary: #4431d8;
 	--color-secondary: #4c4759;
 	--color-accent: #00c27a;
+
+	--animate-fade: fade 0.2s ease-out;
+	--animate-popup: popup 0.2s ease-out;
+
+	@keyframes popup {
+		0% {
+			scale: 70%;
+		}
+		,
+		100% {
+			scale: 100%;
+		}
+	}
+
+	@keyframes fade {
+		0% {
+			opacity: 0%;
+		}
+		,
+		100% {
+			opacity: 100%;
+		}
+	}
 }
 
 body {

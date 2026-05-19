@@ -1,5 +1,8 @@
 <script lang="ts">
+	import Modal from "$lib/components/areas/modal.svelte";
 </script>
+
+<Modal open><p>a</p></Modal>
 
 <main class="md:m-20 m-2 grow">
 	<h1

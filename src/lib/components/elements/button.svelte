@@ -14,6 +14,7 @@
 	let styles: { [key: string]: string } = {
 		default: "bg-primary hover:bg-primary/90 inset-shadow-2xs",
 		secondary: "bg-secondary/50 hover:bg-secondary/90 inset-shadow-2xs",
+		ghost: "hover:bg-secondary/90",
 	};
 </script>
 
