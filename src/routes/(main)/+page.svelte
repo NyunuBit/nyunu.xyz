@@ -196,7 +196,7 @@
 		</h1>
 		<div class="max-w-100 w-full border-t border-text/20"></div>
 
-		<p class="w-full text-text/70 md:text-right text-center mb-10">
+		<p class="w-full text-text/70 md:text-right text-center">
 			Hey! i'm Nyunu <span class="text-text/40"
 				>(not real name for privacy)</span
 			>, i'm an 16 year old creative, interested in audiovisual and
@@ -207,7 +207,7 @@
 			<MapPin></MapPin>
 			Based in <span class="font-black">Brazil</span>
 		</div>
-		<hr class="h-10" />
+		<hr class="h-2" />
 		<Button
 			class=""
 			onclick={() => {
