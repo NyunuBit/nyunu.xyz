@@ -11,7 +11,7 @@
 		Projects
 	</h1>
 	<section
-		class="p-2 grid gap-2 md:grid-cols-4 grid-cols-1 bg-black/20 border border-text/5 rounded-b-default-round"
+		class="p-2 grid gap-2 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-black/20 border border-text/5 rounded-b-default-round"
 	>
 		<ProjectModal bind:dialog title="untitled mess"></ProjectModal>
 		<button
