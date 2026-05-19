@@ -1,7 +1,17 @@
 <script lang="ts">
 	import Modal from "./modal.svelte";
 
-	let {} = $props();
+	let {
+		dialog,
+		title,
+	}: {
+		dialog?: HTMLDialogElement;
+		title: string;
+	} = $props();
 </script>
 
-<Modal></Modal>
+<Modal {dialog}>
+	{#snippet header()}
+		<p>{title}</p>
+	{/snippet}
+</Modal>
