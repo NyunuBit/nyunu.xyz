@@ -72,10 +72,10 @@
 <!-- hero -->
 <section
 	style="background-image: url({HeroBanner});"
-	class="w-full bg-cover bg-no-repeat rounded-b-[64px] overflow-hidden"
+	class="w-full bg-cover bg-no-repeat md:rounded-b-[64px] md:h-auto h-200 p-2 overflow-hidden"
 >
 	<div
-		class=" w-full h-full bg-background/50 backdrop-blur-2xl p-20 flex flex-col gap-20 justify-center items-center"
+		class=" w-full h-full bg-background/50 backdrop-blur-2xl md:p-20 flex flex-col gap-20 justify-center items-center"
 	>
 		<div
 			class="border-2 bg-background border-background max-w-157.5 w-full sm:max-h-157.5 max-h-200 h-full rounded-default-round"
