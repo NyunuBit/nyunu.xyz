@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Modal from "$lib/components/areas/modal.svelte";
 	import ProjectModal from "$lib/components/areas/project_modal.svelte";
+	import { ProjectCategory } from "$lib/types";
 	let dialog: HTMLDialogElement | undefined = $state(undefined);
 </script>
 
@@ -13,7 +14,18 @@
 	<section
 		class="p-2 grid gap-2 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-black/20 border border-text/5 rounded-b-default-round"
 	>
-		<ProjectModal bind:dialog title="untitled mess"></ProjectModal>
+		<ProjectModal
+			bind:dialog
+			project={{
+				icon_path: "Name",
+				banner_path: "Name",
+				name: "Name",
+				description: "Description",
+				role: "Role",
+				category: ProjectCategory.GAMES,
+				creation_date: 0,
+			}}
+		></ProjectModal>
 		<button
 			onclick={() => dialog?.showModal()}
 			class="rounded-default-round bg-background border p-2 aspect-square flex flex-col cursor-pointer items-stretch text-left border-text/5 hover:border-text/15"
