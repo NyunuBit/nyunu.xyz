@@ -29,7 +29,7 @@
 <dialog
 	bind:this={dialog}
 	{id}
-	class=" bg-background max-w-4xl w-full md:aspect-square md:h-auto h-full text-text border border-text/20 *:focus:outline-0 inset-0 m-auto animate-popup backdrop:animate-fade rounded-default-round backdrop:bg-background/50 backdrop:backdrop-grayscale-100"
+	class=" bg-background max-w-5xl w-full md:aspect-square md:h-auto max-h-screen text-text border border-text/20 *:focus:outline-0 inset-0 m-auto animate-popup backdrop:animate-fade rounded-default-round backdrop:bg-background/50 backdrop:backdrop-grayscale-100"
 >
 	<div>
 		<header
