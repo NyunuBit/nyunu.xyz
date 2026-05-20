@@ -13,9 +13,12 @@
 
 <Modal bind:dialog>
 	{#snippet header()}
-		<p>{project.name}</p>
+		<p class="text-xl font-bold">{project.name}</p>
 	{/snippet}
 	{#snippet children()}
-		<h1>{project.name}</h1>
+		<div class="overflow-y-auto overflow-x-hidden p-2">
+			<img src={project.banner_path} alt="{project.name}'s Banner" />
+			<h1 class="font-pixel-header text-6xl">{project.name}</h1>
+		</div>
 	{/snippet}
 </Modal>
