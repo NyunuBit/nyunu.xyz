@@ -16,18 +16,7 @@
 	>
 		<ProjectModal
 			bind:dialog
-			project={{
-				icon_path:
-					"https://images.hdqwalls.com/download/after-sunset-minimal-4k-zm-1920x1080.jpg",
-				banner_path:
-					"https://images.hdqwalls.com/download/after-sunset-minimal-4k-zm-1920x1080.jpg",
-				name: "Name",
-				description: "Description",
-				role: "Role",
-				category: ProjectCategory.GAMES,
-				creation_date: 0,
-				url: "https://www.google.com/",
-			}}
+			project={}
 		></ProjectModal>
 		<button
 			onclick={() => dialog?.showModal()}
