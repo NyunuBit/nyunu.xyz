@@ -1,17 +1,21 @@
 <script lang="ts">
+	import type { Project } from "$lib/types";
 	import Modal from "./modal.svelte";
 
 	let {
 		dialog = $bindable(),
-		title,
+		project,
 	}: {
 		dialog?: HTMLDialogElement;
-		title: string;
+		project: Project;
 	} = $props();
 </script>
 
 <Modal bind:dialog>
 	{#snippet header()}
-		<p>{title}</p>
+		<p>{project.name}</p>
+	{/snippet}
+	{#snippet children()}
+		<h1>{project.name}</h1>
 	{/snippet}
 </Modal>
