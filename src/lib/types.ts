@@ -3,7 +3,6 @@ export enum ProjectCategory {
 	ANIMATION = "Animation",
 }
 
-// TODO: maybe find another type for type for path, if available
 export type Project = {
 	banner_path: URL;
 	icon_path: URL;
