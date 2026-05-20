@@ -14,12 +14,12 @@
 	<section
 		class="p-2 grid gap-2 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-black/20 border border-text/5 rounded-b-default-round"
 	>
-		<ProjectModal
+		<!-- <ProjectModal
 			bind:dialog
 			project={}
-		></ProjectModal>
+		></ProjectModal> -->
+		<!-- onclick={() => dialog?.showModal()} -->
 		<button
-			onclick={() => dialog?.showModal()}
 			class="rounded-default-round bg-background border p-2 aspect-square flex flex-col cursor-pointer items-stretch text-left border-text/5 hover:border-text/15"
 		>
 			<div
