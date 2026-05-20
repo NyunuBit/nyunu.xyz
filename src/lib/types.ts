@@ -5,8 +5,8 @@ export enum ProjectCategory {
 
 // TODO: maybe find another type for type for path, if available
 export type Project = {
-	banner_path: string;
-	icon_path: string;
+	banner_path: URL;
+	icon_path: URL;
 	name: string;
 	description: string;
 	creation_date: number;
