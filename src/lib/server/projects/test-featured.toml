@@ -1,0 +1,11 @@
+[assets]
+banner = ""
+icon = ""
+
+[main]
+name = "ProjectName"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+creation_date = 2024-05-30
+link = "https://www.example.com/"
+category = "Games"
+role = "Lead Owner"
