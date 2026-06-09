@@ -58,7 +58,7 @@
 				<section>
 					<Button
 						onclick={() => {
-							window.location.href = project.main.url;
+							window.open(project.main.link);
 						}}
 						class="p-4"
 						>Check it out!<ArrowRight class="animate-pulse"
