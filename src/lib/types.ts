@@ -4,12 +4,16 @@ export enum ProjectCategory {
 }
 
 export type Project = {
-	banner_path: URL;
-	icon_path: URL;
-	name: string;
-	description: string;
-	creation_date: number;
-	role: string;
-	url: string;
-	category: ProjectCategory;
+	assets: {
+		banner: string;
+		icon: string;
+	};
+	main: {
+		name: string;
+		description: string;
+		creation_date: number;
+		role: string;
+		url: string;
+		category: ProjectCategory;
+	};
 };
