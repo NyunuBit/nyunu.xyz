@@ -20,7 +20,7 @@
 	{#snippet children()}
 		<div class="overflow-y-auto overflow-x-hidden p-2 flex flex-col gap-2">
 			<img
-				src={project.assets.banner_path}
+				src={project.assets.banner}
 				alt="{project.main.name}'s Banner"
 			/>
 			<div class="flex md:flex-row flex-col justify-between p-2 gap-10">
