@@ -1,0 +1,4 @@
+[main]
+year = "26"
+available = false
+youtube_url = "https://www.youtube.com/embed/zPqM9xLXKO0?si=XPbzn0oDVK3WkanI" # this gotta be embed url (ex: https://www.youtube.com/embed/zPqM9xLXKO0?si=mYuFxRD4aKeCcyww)

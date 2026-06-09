@@ -29,6 +29,9 @@
 	import commission from "/src/content/toml/commission.toml?raw";
 	let commisionInfo = toml.parse(commission);
 
+	import demo_reel from "/src/content/toml/demo_reel.toml?raw";
+	let demo_reel_info = toml.parse(demo_reel);
+
 	let skills: { name: string; path: string; icon: Component<LucideProps> }[] =
 		[
 			{
@@ -171,23 +174,33 @@
 {/if}
 
 <!-- demo reel -->
-<section
-	class="xl:px-70 xl:py-10 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center rounded-default-round justify-center"
->
-	<h1
-		class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
+{#if demo_reel_info.main.available}
+	<section
+		class="xl:px-70 xl:py-10 p-4 md:mx-20 m-1 flex flex-col gap-5 items-center rounded-default-round justify-center"
 	>
-		Demo Reel <span class="italic text-accent">26</span>
-	</h1>
-	<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-left">
-		Every year, i'll <span class="text-text/50">(try)</span> to prepare a video
-		containing a summary of all of my work in a quick and flashy manner!
-	</p>
-	<div class="border max-w-100 w-full border-t border-text/20"></div>
-	<video controls src="" class="aspect-video max-w-300 w-full bg-black">
-		<track kind="captions" />
-	</video>
-</section>
+		<h1
+			class="font-pixel-header font-bold md:text-9xl text-5xl md:text-center text-left"
+		>
+			Demo Reel <span class="italic text-accent"
+				>{demo_reel_info.main.year}</span
+			>
+		</h1>
+		<p class="text-text/75 mb-4 max-w-156 w-full md:text-center text-left">
+			Every year, i'll <span class="text-text/50">(try)</span> to prepare a
+			video containing a summary of all of my work in a quick and flashy manner!
+		</p>
+		<div class="border max-w-100 w-full border-t border-text/20"></div>
+		<iframe
+			src={demo_reel_info.main.youtube_url}
+			title="YouTube video player"
+			frameborder="0"
+			class="aspect-video max-w-300 w-full bg-black"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+	</section>
+{/if}
 
 <!-- about -->
 <section
