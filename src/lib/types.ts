@@ -13,7 +13,7 @@ export type Project = {
 		description: string;
 		creation_date: number;
 		role: string;
-		url: string;
+		link: string;
 		category: ProjectCategory;
 	};
 };
