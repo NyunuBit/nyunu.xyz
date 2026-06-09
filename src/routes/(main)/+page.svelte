@@ -226,8 +226,7 @@
 		<p class="w-full text-text/70 md:text-right text-center">
 			Hey! i'm Nyunu <span class="text-text/40"
 				>(not real name for privacy)</span
-			>, i'm an 16 year old creative, interested in audiovisual and
-			studying IT
+			>, i'm an 16 year old creative mind, aspired to create multimedia.
 		</p>
 
 		<div class="flex gap-2 text-accent/80">
