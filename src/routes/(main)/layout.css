@@ -18,8 +18,8 @@
 	--color-secondary: #4c4759;
 	--color-accent: #00c27a;
 
-	--animate-fade: fade 0.2s ease-out;
-	--animate-popup: popup 0.2s ease-out;
+	--animate-fade: fade 0.2s cubic-bezier(0, 0.98, 0.58, 1);
+	--animate-popup: popup 0.8s cubic-bezier(0, 0.95, 0.04, 0.99);
 
 	@keyframes popup {
 		0% {
