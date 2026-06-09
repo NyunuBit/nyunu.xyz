@@ -3,6 +3,7 @@
 	import { Mouse, Rocket } from "@lucide/svelte";
 	import type { Component } from "svelte";
 	import { goto } from "$app/navigation";
+	import toml from "toml";
 	import {
 		Music,
 		Gamepad,
@@ -24,6 +25,9 @@
 			projects: Project[];
 		};
 	} = $props();
+
+	import commission from "/src/content/toml/commission.toml?raw";
+	let commisionInfo = toml.parse(commission);
 
 	let skills: { name: string; path: string; icon: Component<LucideProps> }[] =
 		[
@@ -143,26 +147,28 @@
 </section>
 
 <!-- comms ad -->
-<section
-	class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between rounded-default-round"
->
-	<div class="flex gap-2 items-center">
-		<h1
-			class="font-pixel-header font-bold md:text-7xl text-4xl shadow-none!"
-		>
-			Open Commissions!
-		</h1>
-	</div>
-	<Button
-		class="p-3 bg-background! hover:bg-background/60! duration-200 border-3  border-background  text-text"
-		onclick={() => {
-			goto("/comms");
-		}}
+{#if commisionInfo.main.available}
+	<section
+		class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between rounded-default-round"
 	>
-		<p class="lg:block hidden">Secure your slot!</p>
-		<ExternalLink class="lg:hidden block"></ExternalLink>
-	</Button>
-</section>
+		<div class="flex gap-2 items-center">
+			<h1
+				class="font-pixel-header font-bold md:text-7xl text-4xl shadow-none!"
+			>
+				Open Commissions!
+			</h1>
+		</div>
+		<Button
+			class="p-3 bg-background! hover:bg-background/60! duration-200 border-3  border-background  text-text"
+			onclick={() => {
+				goto("/comms");
+			}}
+		>
+			<p class="lg:block hidden">Secure your slot!</p>
+			<ExternalLink class="lg:hidden block"></ExternalLink>
+		</Button>
+	</section>
+{/if}
 
 <!-- demo reel -->
 <section
