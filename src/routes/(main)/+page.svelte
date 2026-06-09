@@ -88,7 +88,7 @@
 <!-- hero -->
 <section
 	style="background-image: url({HeroBanner});"
-	class="w-full bg-cover bg-no-repeat md:rounded-b-[64px] md:h-auto h-200 overflow-hidden"
+	class="w-full bg-cover bg-no-repeat md:rounded-b-[64px] mb-10 md:h-auto h-200 overflow-hidden"
 >
 	<div
 		class=" w-full h-full bg-background/50 backdrop-blur-2xl md:p-20 p-2 flex flex-col gap-20 justify-center items-center"
