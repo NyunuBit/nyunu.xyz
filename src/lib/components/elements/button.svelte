@@ -24,7 +24,7 @@
 		? styles.default
 		: styles[
 				style
-			]} {class_var} flex gap-2 items-center rounded-default-round cursor-pointer p-2"
+			]} {class_var} flex gap-2 items-center rounded-default-round cursor-pointer p-4"
 >
 	{@render children?.()}
 </button>
