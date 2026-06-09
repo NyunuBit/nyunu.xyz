@@ -27,7 +27,7 @@
 	} = $props();
 
 	import commission from "/src/content/toml/commission.toml?raw";
-	let commisionInfo = toml.parse(commission);
+	let commision_info = toml.parse(commission);
 
 	import demo_reel from "/src/content/toml/demo_reel.toml?raw";
 	let demo_reel_info = toml.parse(demo_reel);
@@ -150,7 +150,7 @@
 </section>
 
 <!-- comms ad -->
-{#if commisionInfo.main.available}
+{#if commision_info.main.available}
 	<section
 		class="lg:py-10 lg:px-30 p-4 m-1 flex gap-10 flex-row bg-accent text-background items-center mb-10 justify-between rounded-default-round"
 	>
