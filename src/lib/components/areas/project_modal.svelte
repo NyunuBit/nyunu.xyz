@@ -25,7 +25,7 @@
 			/>
 			<div class="flex md:flex-row flex-col justify-between p-2 gap-10">
 				<section class="flex-1">
-					<h1 class="font-pixel-header text-6xl">
+					<h1 class="font-pixel-header text-6xl my-4">
 						{project.main.name}
 					</h1>
 					<p class="text-text/70 mb-10">{project.main.description}</p>
