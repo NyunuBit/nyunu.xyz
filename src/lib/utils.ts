@@ -15,7 +15,6 @@ export async function loadProjects(featured?: boolean) {
 		let projects: Project[] = [];
 
 		for (const project in raw_projects) {
-			console.log(featured != undefined && !project.endsWith("-featured.toml"));
 			if (featured != undefined && !project.endsWith("-featured.toml"))
 				continue;
 			projects.push(toml.parse(raw_projects[project] as string));
